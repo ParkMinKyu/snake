@@ -30,19 +30,14 @@ if (!window.cancelAnimationFrame)
 </script>
 </head>
 <body>
-<div>
 	<canvas id="map" height="340" width="240" style="border: 1px solid;"></canvas><br>
 	속도:<span id="speed"></span>&nbsp;&nbsp;길이:<span id="length"></span>&nbsp;&nbsp;점수:<span id="score"></span>
-	
-	<div style="width: 110px;margin: 0 auto;">
-		<button id="38">&nbsp;&nbsp;Up&nbsp;&nbsp;</button>
-	</div>
-	<div style="width: 210px;margin: 0 auto;">
-		<button id="37">&nbsp;left&nbsp;</button>
-		<button id="40">Down</button>
-		<button id="39">Right</button>
-	</div>
-</div>
+	<br>
+	<button id="38">&nbsp;&nbsp;Up&nbsp;&nbsp;</button>
+	<br>
+	<button id="37">&nbsp;left&nbsp;</button>
+	<button id="40">Down</button>
+	<button id="39">Right</button>
 <script type="text/javascript">
 var c = document.getElementById("map"); //canvas객체
 var ctx = c.getContext('2d'); // context객체
