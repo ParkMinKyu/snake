@@ -97,7 +97,6 @@ header h2 {
 
 #content-wrapper {
   border-top: solid 1px #fff;
-  padding-top: 30px;
 }
 
 #main-content {
@@ -112,6 +111,7 @@ header h2 {
 aside#sidebar {
   width: 200px;
   padding-left: 20px;
+  padding-top : 25px;
   min-height: 504px;
   float: right;
   background: transparent url(../images/sidebar-bg.jpg) 0 0 no-repeat;

@@ -30,10 +30,19 @@ if (!window.cancelAnimationFrame)
 </script>
 </head>
 <body>
-<center>
+<div>
 	<canvas id="map" height="340" width="240" style="border: 1px solid;"></canvas><br>
 	속도:<span id="speed"></span>&nbsp;&nbsp;길이:<span id="length"></span>&nbsp;&nbsp;점수:<span id="score"></span>
-</center>
+	
+	<div style="width: 110px;margin: 0 auto;">
+		<button id="38">&nbsp;&nbsp;Up&nbsp;&nbsp;</button>
+	</div>
+	<div style="width: 210px;margin: 0 auto;">
+		<button id="37">&nbsp;left&nbsp;</button>
+		<button id="40">Down</button>
+		<button id="39">Right</button>
+	</div>
+</div>
 <script type="text/javascript">
 var c = document.getElementById("map"); //canvas객체
 var ctx = c.getContext('2d'); // context객체
@@ -423,6 +432,9 @@ createSnake();//지렁이그리기
 startGame();//게임시작
 
 $(function(){
+	$('#37,#38,#39,#40').bind("click",function(){
+		call_move(parseInt(this.id));
+	});
 	$(document).keydown(function(event){
 		switch(event.keyCode){
 		//left
